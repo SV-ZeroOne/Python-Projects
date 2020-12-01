@@ -1,0 +1,27 @@
+====================
+Packaging on Windows
+====================
+Need to install pyinstaller
+PathToPython.exe -m pip install pyinstaller
+C:\Python27\python.exe -m pip install pyinstaller
+
+Converting the .py file to an executable
+# package all into --onefile
+C:\Python27\Scripts\pyinstaller.exe reverse_backdoor.py --onefile 
+# Don’t show the console once program is run
+C:\Python27\Scripts\pyinstaller.exe reverse_backdoor.py --onefile --noconsole
+
+! When packaging a program that uses multiple libraries its important that you have the library installed on the same PC that is packaging it.
+
+====================
+Packaging on Linux
+====================
+# Had to run to get wine to work it was a big download
+https://wiki.debian.org/Wine
+dpkg --add-architecture i386 && apt-get update && apt-get install wine32
+CD into .wine/drive_c/Python27/
+wine python.exe -m pip install pyinstaller
+
+Had to run this when packaging the keylogger with an external library on the Linux machine using wine and making the exe for windows machine.
+wine /root/.wine/drive_c/Python27/python.exe -m pip install pynput
+wine /root/.wine/drive_c/Python27/Scripts/pyinstaller.exe zlogger.py --onefile --noconsole

