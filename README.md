@@ -1,6 +1,8 @@
 # Python-Projects
 _This repo use to be my private hacking repository for Personal Python Hacking Projects and Scripts_
+
 _I have now made it public for those who which to make use of some of the scripts_
+
 _I cannot be held liable for any use of these scripts for malicious purposes, they should be strictly used for educational purposes!_
 
 ![Python Powered Scripts](https://www.python.org/static/community_logos/python-powered-w-200x80.png)
