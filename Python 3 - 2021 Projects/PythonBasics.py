@@ -3,6 +3,7 @@ print("Hello Steve, its been a while!")
 print("Lets do some simple arithmetic math.")
 print(400 + 20)
 print("To the power of **")
+print("Remember modulo % - this finds remainders (useful for odds or evens, etc)")
 print(10 ** 3)
 print('\n')
 print('-' * 20)
@@ -100,3 +101,57 @@ Comparison Operators
 print(comparison_operators)
 print('-' * 20)
 print(2 < 3)
+print('\n')
+print('-' * 20)
+print('Flow Control: If Statements')
+print('If, elif and else')
+print('-' * 20)
+
+if username.lower() == 'neo':
+    print(f"Hello {username}, you are the one.")
+elif username.lower() == 'trinity':
+    print(f'{username}, you will fall in love with the one.')
+else:
+    print(f"Unfortunately {username}, you are not the one.")
+
+print('\n')
+print('-' * 20)
+print('Loops')
+print('Two different types of loops, FOR and WHILE')
+print('-' * 20)
+print('For Loops: Iteration!')
+new_numbers = [1,2,3,4,5]
+
+for x in new_numbers:
+    print(x)
+
+sum_of_loop = 0
+for x in range(3,6):
+    sum_of_loop += x
+    print(sum_of_loop)
+
+co_workers = ['Gin','Ben','Tom', 'Bob']
+for y in co_workers:
+    if y == 'Tom':
+        print('Tom is my only real co-worker')
+        break
+    else:
+        print(f'{y} is not an real co-worker')
+
+print('While Loops!')
+x = 0
+while x < 10:
+    x += 1
+    if x == 5:
+        print('Half way there...')
+        # Notice how it does not print 5 and jumps over this iteration
+        continue
+    print(x)
+else:
+    print('x is now equal or larger than 10')
+
+
+print('\n')
+print('-' * 20)
+print('Functions')
+print('-' * 20)
