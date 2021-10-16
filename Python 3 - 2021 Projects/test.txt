@@ -1,0 +1,5 @@
+1. So you want to learn Python?
+2. Well, good for you!
+3. Python is a growing language used all around the world.
+4. It is useful in many different aspects of technology.
+5. Which are are you trying to explore with Python?
